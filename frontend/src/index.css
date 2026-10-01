@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+
+  /* Design tokens */
+  --ivory: #FAF8F5;
+  --ivory-dark: #F3EFE9;
+  --border: #E8E2DA;
+  --border-subtle: #F0EBE4;
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-muted: #A8A29E;
+  --rose-accent: #C2826A;
+  --rose-light: #F5EDE8;
+  --sage: #6B8F71;
+  --sage-light: #EBF1EC;
+  --amber-accent: #B08050;
+  --amber-light: #FAF4EC;
+  --red-clinical: #B91C1C;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF8F5;
+  color: #1C1917;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4B8AC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C2826A;
+}
+
+/* Editorial serif for headings */
+.font-editorial {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Subtle continuity dot pulse */
+@keyframes continuity-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-continuity {
+  animation: continuity-pulse 3.5s ease-in-out infinite;
+}
+
+/* Emergency pulse — reserved exclusively for SOS */
+@keyframes sos-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.25); }
+  50% { box-shadow: 0 0 0 7px rgba(185, 28, 28, 0); }
+}
+
+.animate-sos {
+  animation: sos-pulse 2.5s ease-in-out infinite;
+}
+
+/* Smooth hover arrow nudge */
+.group:hover .arrow-nudge {
+  transform: translateX(3px);
+}
+
+.arrow-nudge {
+  transition: transform 0.15s ease;
+}
+
+/* Tool row hover */
+.hover-row {
+  transition: background-color 0.15s ease;
+}
+.hover-row:hover {
+  background-color: #FBF7F4;
+}
+
+/* Calm Pulse (kept for compat) */
+@keyframes calm-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-calm-pulse {
+  animation: calm-pulse 3s ease-in-out infinite;
+}
+
+/* Selection */
+::selection {
+  background-color: #F5EDE8;
+  color: #1C1917;
+}
+
+/* Focus rings */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #C2826A;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Subtle gradient badge (kept for compat) */
+.badge-evidence {
+  background: linear-gradient(135deg, rgba(194, 130, 106, 0.08) 0%, rgba(107, 143, 113, 0.08) 100%);
+  border: 1px solid rgba(194, 130, 106, 0.18);
+}
