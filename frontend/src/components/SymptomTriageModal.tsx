@@ -152,30 +152,30 @@ export const SymptomTriageModal: React.FC<SymptomTriageModalProps> = ({
           {!triageResult ? (
             <form onSubmit={handleTriageSubmit} className="space-y-5">
               
-              {/* Preset Scenarios for Judges */}
+              {/* Common Clinical Examples */}
               <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
-                <span className="font-bold text-slate-700 block mb-2">⚡ Quick Test Scenarios for Evaluation:</span>
+                <span className="font-bold text-slate-700 block mb-2">⚡ Common Clinical Scenarios:</span>
                 <div className="flex flex-wrap gap-2">
                   <button
                     type="button"
                     onClick={() => setSampleScenario('contractions')}
                     className="px-3 py-1.5 rounded-xl bg-red-50 text-clinical-red border border-red-200 font-bold hover:bg-red-100 transition-colors"
                   >
-                    🔴 Test RED Flag: Contractions Every 8 Min
+                    🔴 Contractions Every 8 Min (Urgent)
                   </button>
                   <button
                     type="button"
                     onClick={() => setSampleScenario('headache')}
                     className="px-3 py-1.5 rounded-xl bg-amber-50 text-amber-800 border border-amber-200 font-semibold hover:bg-amber-100 transition-colors"
                   >
-                    🟡 Test YELLOW: Mild Headache
+                    🟡 Mild Headache
                   </button>
                   <button
                     type="button"
                     onClick={() => setSampleScenario('backache')}
                     className="px-3 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 font-semibold hover:bg-emerald-100 transition-colors"
                   >
-                    🟢 Test GREEN: Routine Backache
+                    🟢 Routine Backache
                   </button>
                 </div>
               </div>
