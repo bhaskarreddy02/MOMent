@@ -1,4 +1,5 @@
 # MOMENT — Personalized Evidence-Grounded AI Pregnancy Companion
+<<<<<<< HEAD
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
@@ -8,6 +9,10 @@
 [![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
 > **"An intelligent, evidence-grounded AI pregnancy companion that maintains a persistent longitudinal memory of the mother's journey, evaluates symptoms through deterministic clinical safety protocols, tracks medications and wearable vitals, and bridges the gap to professional obstetric care."**
+=======
+Delpoyed:https://mo-ment-flame.vercel.app/
+> **"An AI pregnancy companion that remembers the pregnancy journey, uses trusted medical evidence, tracks care/medications/health data, and safely connects the user to professional care when needed."**
+>>>>>>> e4bd735a47b767eb57819a368846d750dbf557d8
 
 ---
 
